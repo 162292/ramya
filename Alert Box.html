@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERT BOX</title>
+</head>
+<body>
+   <script>
+    const a=Math.trunc(Math.random()*11);
+    let hint="";
+    function showques(){
+        let b=prompt("Guess the number between 1 to 10" +hint);
+        if(b==a){
+            alert("correct")
+        }
+        else{
+            if(b>a){
+                hint="              try smaller number";
+            }
+            else{
+                hint="              try greater number";
+            }
+            showques()
+        }
+    }
+    showques()
+   </script> 
+</body>
+</html>

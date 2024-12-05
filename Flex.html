@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        @media screen and (min-width:601px){
+        :root{
+            font-size: 15px;
+        }
+    }
+    @media screen and (min-width:1000px){
+        :root{
+            font-size: 20px;
+        }
+    }
+   
+    @media screen and (max-width:600px){
+        :root{
+            font-size: 12px;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+    }
+    
+        .flower{
+            width: 50px;
+            height: 50px;
+            
+        }
+        .column{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .row{
+            
+            width: 250px;
+            height: 150px;
+            text-align: center;
+    
+        }
+        .topic{
+            text-align: center;
+       
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+        .c1{
+        background-color: green;
+        }
+        .c2{
+        background-color: yellow;
+        }
+        .c3{
+        background-color: palevioletred;
+        }
+        .styl{
+            font-style: italic;
+            padding: 1%;
+        }
+    
+        .flex{
+            background-color: aquamarine;
+    padding: 3%;
+        margin: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 0.8rem;
+        }
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    </style>
+</head>
+<body>
+    <section>  
+        <div class="flex"> 
+        <div class="topic"> 
+           <h1 class="h1">10+ years of agency experience</h1>
+           <p class="styl">sample text.click toselect the text box.click again or double click to start editing the text</p> 
+        </div> 
+        <div class="column"> 
+        <div class="row c1">
+           <h3>PRINT AND LAYOUT</h3>
+           <h4>Magazine and catalogues</h4>
+        </div>
+        <div class="row img">
+           <img  class="flower" src="img/flower.jpg" alt="flower">
+        </div>
+        <div class="row c2">
+           <h3>PHOTOGRAPHY</h3>
+           <h4>capturing moments</h4>
+        </div>
+        </div>
+        <div class="column">
+        <div class="row img">    
+            <img class="flower" src="img/bix-logo.png" alt="bix logo">
+        </div>
+        <div class="row c3">
+           <h3>BRAND AND IDENTIFY</h3>
+           <h4>corporate management</h4>
+        </div>
+        <div class="row img">
+           <img class="flower" src="img/web-develoment.jpg" alt="web development"> 
+        </div>
+        </div>  
+        </div>
+</section>
+
+</body>
+</html>

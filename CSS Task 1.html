@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+
+    *{
+            margin: 0;
+            padding: 0;
+        }
+    .job{
+            padding: 12px;
+            font-size: 1.5em;
+        }
+    .register{
+            background-color: red;
+            padding:10px;
+            color: white;
+            text-decoration: none  ;
+        
+            
+        }
+        
+    .container1{
+            display: flex;
+            background-image:url(https://bixitacademy.com/lp1/assets/img/bix-hero-bgk.webp);
+            padding: 20px;
+            
+       }
+    .sec1{
+    
+        margin-left: 90px;
+        margin-top: 120px;
+        color: white;
+        
+    
+        
+       }
+    .sec2{
+        padding-left: 40px;
+        padding-top: 40px;
+        
+        
+       }
+    .logo{
+        padding-left: 130px;
+       }
+    .head{
+        font-size: 3em;
+        width: 80%;
+        margin-top: 150px; 
+        font-weight: 900;
+        margin-left: 2%;
+    }
+    .form{
+        padding: 5px;
+    }
+    .sec3{
+        background-color: white;
+        padding: 2%;
+        margin: 3%;
+    }
+    .info{
+        padding: 8px;  
+        width: 280px;
+
+    }
+    .ready{
+    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        background-image: url(https://bixitacademy.com/lp1/assets/img/form-bk.webp);
+    }
+        
+    .sub{
+        background-color: red;
+        border: none;
+        width: 300px;
+        height: 30px;
+        font-size: 1.5em;
+        color: white;
+    }
+    .sub1{
+        text-align: center;
+    }
+    .join{
+        text-align: center;
+        font-size: 3em;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 2%;
+    }
+    .span{
+        color: red;
+        padding-left: 1%;
+        font-size: 1em;
+    }
+    .skill{
+        padding: 8px;
+    }
+    .container2{
+        display: flex;
+        width: 90vw;
+        
+    }
+    .img{
+        
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+    .apply1{
+        text-align: center;
+        margin-bottom: 3%;  
+        
+    
+    }
+    .apply{
+        background-color: red;
+        border: 1px solid red;
+        border-width: 10px;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white; 
+        
+   
+    }
+    .sec4{
+        font-size: 1.5em;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    .switch{
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        padding: 2%;
+        width: 30%;
+        margin-left: 35%;
+    }
+    .container3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    
+    }
+    .container4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 11%;
+        margin-right: 10%;
+        padding-bottom: 3%;
+    
+    }
+    .merge{
+        width: 100%;
+    }
+
+
+    
+
+    
+    .A{
+        display: flex;
+        margin: 10px;
+        height: 22vh;
+    
+       
+       border: 1px solid white;
+       background-color: white;
+    }
+    .container5{
+        background-color: black;
+    }
+    .insider{
+        text-align: center;
+        width :30%;
+        margin-left:35% ; 
+        font-size: 2em;  
+    }
+    .container6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    .sec6{
+        border: 1px solid white;
+        margin:1%;
+        width: 15vw;
+        height: 35vh;
+        text-align: center;
+        background-color: white;
+        padding: 2%;
+        border-radius: 10px;
+        
+    }
+    .secret{
+        color: red;
+        padding-bottom: 2%;
+    }
+    .career{
+        text-align: center;
+    }
+    .career1{
+        background-color: red;
+        border: 1px solid red;
+        border-width: 10px;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+        margin-bottom: 2%;
+    }
+    .trust{
+        text-align: center;
+        padding: 2%;
+        margin: 2%;
+        font-size: 2.5em;
+        color: white;
+    }
+    .social{
+        background-image: url(img/social-bgk.jpg);
+        padding: 2%;
+    
+    
+    }
+    .container7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        padding: 1%;
+    
+    }
+    .plus{
+        height: 22vh;
+        margin: 2%;
+        box-shadow: 50px;
+        text-align: center;
+        border-radius: 30px;
+        width :15vw;
+        background-color: white;
+        padding: 1%;
+        
+    }
+    .num{
+        color: red;
+        font-weight: 600;
+        padding: 5%;
+        font-size: 1.5em;
+
+    }
+    .sec7{
+        background-image: url(https://bixitacademy.com/lp1/assets/img/social-bgk.webp);
+    }
+    .last{
+        text-align: center;
+        width: 25%;
+        font-size: 1.5em;
+        margin-left: 35%;
+        padding: 3%;
+    }
+    .S{
+        display: flex;
+        
+
+    }
+    .part1{
+        border: 4px solid lightgray; 
+        border-radius: 20px;
+        width: 30%;
+        margin: 10px;
+        
+    
+             }
+    .sec8{
+       display: flex; 
+
+        overflow: auto;
+        width: 90vw;
+        height: 70vh;
+       
+    }
+    .circle{
+        
+        border-radius: 50%;
+        font-size: 2.5em;
+        background-color: red;
+        color: white;
+        margin: 10px;
+        
+    }
+    .name1{
+        color: red;
+        margin: 10px;
+        font-size: 1.5em;
+    }
+    .white{
+        text-align: center;
+    }
+    .BIX{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+    .sec9{
+        background-color: black;
+        padding: 1%;
+    }
+    .zzz{
+        color: white;
+        margin-left: 100px;
+        margin-right: 120px;
+    }
+    .para{
+        margin: 2%;
+        padding: 2%;
+    
+    }
+    .shadow{
+        background-color: #ccc;
+        padding: 2%;
+    }
+    .h,.p1{
+        padding: 3%;
+    }
+    </style>
+</head>
+<body>
+    <div class="logo">
+    <img src="img/bix-logo.png" alt="bix logo">
+    </div>
+    <div class="container1">
+    <section class="column">
+    <div class="sec1 ">
+    <h1 class="head">Planning to Shift to An IT Job In Just 4 Months?</h1>
+    <div class="job">
+    <img src="img/icon-cont,jpg.png">
+    <span>No Technical Degree Needed</span><br>
+    </div>
+    <div class="job">
+    <img src="img/icon-cont,jpg.png">   
+        <span>No High CGPA Needed</span><br>
+        </div>
+        <div class="job">
+    <img src="img/icon-cont,jpg.png">
+    <span>All You NEED Is Just The Right Skills!!</span>
+    </div>
+    <div class="job ">
+    <a class="register" href="#bix-form">Register Now for free counselling call!</a>
+    </div>
+    </div>
+    
+    </section>
+    <section class="column">
+    <div>
+    <img  class="sec2" src="img/hero-img.jpg">
+  </div>
+  </section>
+  </div>
+  <section class="ready">    
+    <form class="sec3" >
+        <div>
+        <h2 >Ready to Get Into an IT Job?</h2>
+        </div>
+        <div class="form">
+        <label for="Name">Name</label><br>
+        <input class="info"  type="text" placeholder="Enter your name" name="name" required>
+        </div>
+        <div class="form">
+        <label for="Email Id">Email Id</label><br>
+        <input class="info" type="text" placeholder="Enter your email address" name="email id" required>
+</div>
+<div class="form">
+    <label for="contact number">contact number</label><br>
+    <input class="info" type="text" placeholder="preferred whatsapp number" name="contact number" required>
+    </div>
+    <div class="form">
+        <label for="Degree">Degree</label><br>
+        <input class="info" type="text" placeholder="Enter your degree" name="degree" required>
+    </div>
+    <div class="form">
+        <label for="passed-out year">Passed-Out year</label><br>
+        <input class="info" type="text" placeholder="Enter your passed-out year" name="enter your passed-out year" required>
+        </div>
+        <div class="form">
+            <input type="radio" id="experience" name="about you" value="Experience">
+            <label for="experience">Experience</label>
+            <input type="radio" id="fresher" name="about you" value="Fresher">
+            <label for="fresher">Fresher</label>
+            </div>
+            <div class="form">
+                <label for="city">city</label><br>
+                <input class="info" type="text" placeholder="Enetr your city" name="city" required>
+                </div>
+                <div class="form" >
+       
+                    <input type="radio" id="i agree to"  name="agree" value="I Agree to" required>
+                    <label for="I Agree to">I agree to </label>
+                    <a href="https://www.bixitacademy.com/" target="_blank">terms and conditions</a>
+                    
+            
+                </div>
+                <div class="form sub1" >
+
+                    <input class="sub"  type="submit" id="submit" name="submit">
+                </div>
+            
+            
+    </form>
+    </section>
+    <section>
+    <div>
+    <h1 class="join">Are You Among The Below?<span class="span">If Yes, Don't Wait To Join!</span></h1>
+    <div class="container2">
+   <div class="illustrate"> 
+    <div class="sec4">
+ <div class="skill">   
+    <img src="img/point1-icon.svg">
+    <span>Feeling Stuck In Your Non-IT Career?</span>
+    </div>
+    <div class="skill"> 
+        <img src="img/point1-icon.svg">
+        <span>Want to Transition To IT But Have No Technical Skills?</span>
+    </div>
+        <div class="skill"> 
+        <img src="img/point1-icon.svg">
+        <span>Increased Age,But Still Stuck With Low Salary?</span>
+    </div>
+        <div class="skill"> 
+        <img src="img/point1-icon.svg">
+        <span>Want a High-Paying IT Job Within 4 Months? </span>
+    </div>
+        <div class="skill"> 
+        <img src="img/point1-icon.svg">
+        <span>Want To Continue Your Job After A Career Break?</span>
+    </div>
+    </div>
+    </div>
+    <div class="illustrate">
+        <img class="img" src="img/illustrator-img.svg">
+        </div>
+        </div>
+        <div class="apply1">
+            <a class="apply" href="#bix-form">Apply Now!</a>
+            </div>
+        
+        <section class="container5">
+            
+            
+                <div class="switch">
+                    <h1 >What's Stopping You From Switching To IT?</h1>
+                </div>
+                <div class="merge">
+                <div class="container3">
+                <div class="xxx A">
+                    <img src="img/technical-skill.svg">
+                <div >
+                    <h4 class="h">Lack of Technical Skills?</h4>
+                    <p class="p1">Limited proficiency in IT skills may hinder a smooth transition.</p>
+                </div>
+                </div>
+                <div class="xxx A">
+                    <img src="img/no-experience.svg">
+                    <div >
+                        <h4 class="h">No Relevant Experience?</h4>
+                        <p class="p1">Without hands-on experience,entering the IT field can be challenging.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="container4">
+                <div class="yyy A">
+                    <img src="img/requirements.svg">
+                    <div >
+                        <h4 class="h">Not Certain About Industry Requirements?</h4>
+                        <p class="p1">Not Knowing the specific demands and trends in the IT sector may create hesitation.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="yyy A " >
+                    <img src="img/guidance.svg">
+                    <div>
+                        <h4 class="h">No Clear Path or Guidance?</h4>
+                        <p class="p1">Absence of a structured plan or guidance can make the transition to IT seem daunting
+                            and unclear.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="shadow">
+                <div>
+                    <h1 class="insider">Insider Secrets From Our Free Counselling Call!</h1>
+                    <div class="container6">
+                <div class="sec6">
+                <img src="img/secret-1.svg">
+                <h4 class="secret">Secret #1</h4>
+                <p>Hidden job options you never knew existed.</p>
+                </div>
+                <div class="sec6">
+                <img src="img/secret-2.svg">
+                <h4 class="secret">Secret #2</h4>
+                <p>Salary negotiation strategies you haven't considered.</p>
+                </div>
+                <div class="sec6">
+                <img src="img/secret-3.svg">
+                <h4 class="secret">Secret #3</h4>
+                        <p>Skill Gap Analysis</p>
+                        </div>
+                 <div class="sec6">
+                <img src="img/secret-4.svg">
+                <h4 class="secret">Secret #4</h4>
+                <p>Customized Action Plan</p>
+                </div>
+                </div>
+                </div>
+                
+                    <div class="career">
+                    <a  class="career1"href="#bix-form">Get Career Guidance!</a>
+                    </div>
+                </section>
+                
+            
+            <section class="social">
+           
+                <div class="trust">
+                <h1>Why Trust Us</h1>
+                </div>
+                <div class="container7">
+                <div class ="plus">
+                <h1 class="num">8+</h1>
+                        <p>Years Industry Experience</p>
+                        </div>
+                        <div class ="plus">
+                        <h1 class="num">40+</h1>
+                        <p>Advanced Courses</p>
+                        </div>
+                        <div class ="plus">
+                        <h1 class="num">3,000+</h1>
+                        <p>Job Placement</p>
+                        </div>
+                        <div class ="plus">
+                        <h1 class="num">10,000+</h1>
+                        <p>Students Trained</p>
+                        </div>
+                        </div>
+                        
+            </section>
+            
+                <div>
+                <h1 class="last">You Too Can Be a Part Of Our Testimony!</h1>
+                <section class="sec8">
+                <div class="part1">
+                <div class="S">
+                    <div >
+                <span class="name circle">S</span>
+                </div>
+                <div class="name1">Sumithra</div>
+                <div>Amazon AWS</div>
+                        <div>
+                        <img  class="name"src="img/rating.svg">
+                        </div>
+                        </div>
+                     
+                        <div class="para">
+                        <h4>Got Placed In An IT Job</h4>
+                        <p>
+                            "I joined the IT course training academy with the hope of learning new skills and getting a
+                            job in the IT industry. I was not disappointed.
+                            BIX IT Academy offered an all-around curriculum that covered almost all the topics I wanted
+                            to learn about.
+                            There were ample assignments, projects, and mock interviews. They also helped me with resume
+                            writing and career counselling.
+                            Thanks to the academy, I was able to land a job as a software engineer at a reputed IT
+                            company. I am very happy with my career choice and I owe it to the academy for making it
+                            possible."
+                        </p>
+                        </div>
+                        </div>
+                        
+                        <div class="part1">
+                            <div class="S">
+                        <div>
+                        <span class="name circle">R</span>
+                        </div>
+                        <div class="name1">Raghavendra</div>
+                        <div>Python</div>
+                        <div>
+                        <img class="name" src="img/rating.svg"> 
+                        </div>
+                        </div>
+                        <div class="para"> 
+                        <h4>Amazing Teaching Skills</h4>
+                        <p>
+
+                            "Shoutout to the BIX IT team! The mentors do an amazing job of explaining everything. They
+                            start with the basics and build up to advanced stuff in a way that's easy to understand,
+                            even for beginners. And they make it fun! Learning is so much more enjoyable when you're
+                            having a good time. Keep up the great work, and I hope even more students get to experience
+                            your teaching!"
+
+                        </p>
+                        </div>
+                        </div>
+                        <div class="part1">
+                            <div class="S">
+                        <div>
+                        <span class="name circle">N</span>
+                        </div>
+                        <div class="name1">Nithya</div>
+                        <div>Selenium With Python</div>  
+                        <div>
+                            <img class="name" src="img/rating.svg">
+                        </div> 
+                        </div> 
+                        <div class="para"> 
+                        <h4>Switched career from Non-IT to IT industry</h4>
+                        <p>
+
+                            “My Python journey started from absolute ground zero, with no coding experience whatsoever.
+                            But guess what? The language is beginner-friendly, and I started programming quickly. Huge
+                            thanks to the mentors for their amazing one-on-one mentorship during the live sessions. They
+                            really helped me grasp the concepts behind each topic and made the whole learning process
+                            super clear. Feeling super grateful and excited to keep coding!”
+
+                        </p> 
+                        </div>  
+                        </div>
+                        <div class="part1"> 
+                            <div class="S">
+                        <div>
+                            <span class="name circle">G</span>
+                            </div>
+                            
+                    <div class="name1">Gayathri</div>
+                    <div>Python</div> 
+                    <div>
+                        <img class="name" src="img/rating.svg">    
+                    </div>
+                    </div>
+                    <div class="para">
+                        <h4>Best Learning Experience</h4>
+                        <p>
+
+                            "If you're looking to make a career change from non-IT to IT, then taking up classes from
+                            BIX IT Academy is the best way to go!! They’ve got a genius way of teaching Python, starting
+                            from the absolute basics and taking you all the way to advanced concepts. I'm incredibly
+                            grateful to BIX IT Team for their amazing teaching skills."
+
+                        </p>
+                    </div>
+                    </div>
+                    <div class="part1">
+                        <div class="S">
+                    <div>
+                        <span class="name circle">R</span>
+                    </div>
+                    <div class="name1">Raghunath</div>
+                        <div>Career Counselling</div>
+                        <div>
+                            <img class="name" src="img/rating.svg">   
+                        </div>
+                        </div>
+                        <div class="para">
+                            <h4>Upskilled In My Profession</h4>
+                        <p>
+                            "I joined the IT course training academy with the hope of learning new skills and getting a
+                            job in the IT industry. I was not disappointed.
+                            BIX IT Academy offered an all-around curriculum that covered almost all the topics I wanted
+                            to learn about.
+                            There were ample assignments, projects, and mock interviews. They also helped me with resume
+                            writing and career counselling.
+                            Thanks to the academy, I was able to land a job as a software engineer at a reputed IT
+                            company. I am very happy with my career choice and I owe it to the academy for making it
+                            possible."
+                        </p>
+                        </div>
+                        </div>
+                    </section>
+                    <section class="sec9">
+                        <div class="white">
+                        <img src="img/logo-white-bix 1.jpg">
+                        </div>
+                        <div class="BIX">
+                        <div class="zzz">
+                        <h4>@ 2024 BIX IT Academy | All Rights Reserved.</h4>
+                    </div>
+                <div>
+                        <a class="zzz" href="">Powered by Plixo Technologies</a>
+                    </div>
+                    </section>
+</body>
+</html> 

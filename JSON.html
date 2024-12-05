@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+   <style>
+   body {
+            font-family: cursive;
+            background-color:aqua;
+        }
+        h1 {
+            text-align: center;
+        }
+        #book-list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+        .book {
+            position: relative; /* Position relative for overlay */
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            overflow: hidden; /* Hide overflow of the overlay */
+        }
+        .book img {
+            width: 100%;
+            height: auto;
+        }
+        .book-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            color: white;
+            padding: 10px;
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.3s; /* Smooth transition for visibility */
+            text-align: center; /* Center text */
+        }
+        .book:hover .book-overlay {
+            opacity: 1; /* Show overlay on hover */
+    
+        }
+
+   </style> 
+</head>
+<body>
+    <h1>Book Lists</h1>
+    <div id="book-list"></div>
+    <script>
+        const books=[
+            {
+                "title":"To kill a Mockingbird",
+                "author":"Harper Lee",
+                "year":1960 ,
+                "image":"img/kingbird.jpg"
+            },
+            {
+                "title":"1984",
+                "author":"George Orwell",
+                "year":1949,
+                "image":"img/george.jpg"
+            },
+            {
+                "title":"The Missing Men",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/missingmen.jpg"
+            },
+            {
+                "title":"One Thousand",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/one thousand.jpg"
+            },
+            {
+                "title":"The Pride ",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/pride.jpg"
+            },
+            {
+                "title":"The Fairy",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/fairy.jpg"
+            },
+            {
+                "title":"Devine",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/devine.jpg"
+            },
+            {
+                "title":"The Epic",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/epic.jpg"
+            },
+            {
+                "title":"The Gandhi",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/gandhi.jpg"
+            },
+            {
+                "title":"The Literature",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/literature.jpg"
+            },
+            {
+                "title":"Grant",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/grant.jpg"
+            },
+            {
+                "title":"The Wonder",
+                "author":"F.Scott Fitzgerald",
+                "year":1925,
+                "image":"img/wonder.jpg"
+            },
+
+        ];
+
+        const booklist = document.getElementById("book-list");
+        books.forEach(book => {
+            const bookDiv = document.createElement("div");
+            bookDiv.className = "book";
+            bookDiv.innerHTML = `
+                <div class="book-image">
+                    <img src="${book.image}" alt="${book.title}" />
+                    <div class="book-overlay">
+                        <h2>${book.title}</h2>
+                        <p><strong>Author:</strong> ${book.author}</p>
+                        <p><strong>Year:</strong> ${book.year}</p>
+                    </div>
+                </div>
+            `;
+            booklist.appendChild(bookDiv);
+        });
+    </script>
+</body>
+</html>
